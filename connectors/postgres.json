@@ -1,0 +1,16 @@
+{
+  "name": "postgres-connector-sink",
+  "config": {
+    "name": "postgres-connector-sink",
+    "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+    "connection.url": "jdbc:postgresql://postgres:5432/posts_db",
+    "connection.user": "user",
+    "connection.password": "123456",
+    "topics": "mysql.preview.students",
+    "table.name.format": "students",
+    "auto.create": "true",
+    "pk.mode": "record_value",
+    "pk.fields": "id",
+    "insert.mode": "upsert"
+  }
+}

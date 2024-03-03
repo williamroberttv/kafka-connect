@@ -1,0 +1,3 @@
+curl -X POST  -H  "Content-Type:application/json" http://localhost:8083/connectors -d @mysql.json
+
+curl -X POST  -H  "Content-Type:application/json" http://localhost:8083/connectors -d @postgres.json
